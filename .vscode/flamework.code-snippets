@@ -1,0 +1,25 @@
+{
+	"Flamework Controller": {
+		"prefix": ["controller", "flameworkcontroller"],
+		"description": "Flamework Controller Template",
+		"body": [
+			"import { Controller } from \"@flamework/core\";",
+			"",
+			"@Controller({})",
+			"export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} {}",
+			""
+		]
+	},
+
+	"Flamework Service": {
+		"prefix": ["service", "flameworkservice"],
+		"description": "Flamework Service Template",
+		"body": [
+			"import { Service } from \"@flamework/core\";",
+			"",
+			"@Service({})",
+			"export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} {}",
+			""
+		]
+	}
+}

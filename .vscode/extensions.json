@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"tamasfe.even-better-toml",
+		"flamework.flamework-vscode",
+		"roblox-ts.vscode-roblox-ts",
+		"evaera.vscode-rojo"
+	]
+}

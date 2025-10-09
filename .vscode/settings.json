@@ -1,0 +1,31 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "always",
+		"source.fixAll.ts": "always",
+		"source.organizeImports.biome": "always",
+		"source.removeUnusedImports": "always"
+	},
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/flamework.build": true,
+		"**/include": true,
+		"**/node_modules": true,
+		"**/out": true,
+		"**/*sourcemap.json": true,
+		"**/*.tsbuildinfo": true
+	},
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[javascript][typescript][typescriptreact][json][jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	}
+}

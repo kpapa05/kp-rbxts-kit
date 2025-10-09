@@ -1,0 +1,56 @@
+{
+	"name": "kp-rbxts-kit",
+	"private": true,
+	"scripts": {
+		"build": "rbxtsc",
+		"build:watch": "rbxtsc -w",
+		"check": "bun run check:biome && bun run check:types",
+		"check:biome": "biome check .",
+		"check:types": "tsc --noEmit",
+		"clean": "rimraf out",
+		"dev": "concurrently \"bun run build:watch\" \"bun run serve\" ",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"prepare": "lefthook install",
+		"serve": "rojo serve default.project.json"
+	},
+	"dependencies": {
+		"@flamework/core": "^1.3.2",
+		"@rbxts/charm": "^0.10.0",
+		"@rbxts/charm-sync": "^0.3.0",
+		"@rbxts/flamework-meta-utils": "^1.0.7",
+		"@rbxts/lyra": "^0.6.0",
+		"@rbxts/pretty-react-hooks": "^0.6.4",
+		"@rbxts/promise-character": "^1.0.3",
+		"@rbxts/react": "^17.2.3",
+		"@rbxts/react-charm": "^0.3.0",
+		"@rbxts/react-roblox": "^17.2.3",
+		"@rbxts/serio": "^1.0.19",
+		"@rbxts/services": "^1.5.5",
+		"@rbxts/t": "^3.2.1",
+		"@rbxts/tether": "^1.3.24",
+		"@rbxts/ui-labs": "^2.4.1",
+		"rbxts-transform-env": "^3.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.5",
+		"@commitlint/cli": "^19.8.1",
+		"@commitlint/config-conventional": "^19.8.1",
+		"@commitlint/types": "^19.8.1",
+		"@rbxts/compiler-types": "^3.0.0-types.0",
+		"@rbxts/types": "^1.0.883",
+		"concurrently": "^9.2.1",
+		"git-pull-run": "^1.6.2",
+		"lefthook": "^1.13.4",
+		"lint-staged": "^16.2.0",
+		"rbxts-transformer-flamework": "^1.3.2",
+		"rimraf": "^6.0.1",
+		"roblox-ts": "^3.0.0",
+		"typescript": "5.5.3"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,json,jsonc}": [
+			"biome check --write --no-errors-on-unmatched"
+		]
+	}
+}

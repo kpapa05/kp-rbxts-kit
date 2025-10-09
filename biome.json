@@ -1,0 +1,91 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"defaultBranch": "main",
+		"useIgnoreFile": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noBannedTypes": "off",
+				"noCommaOperator": "on",
+				"noExcessiveNestedTestSuites": "on",
+				"noExtraBooleanCast": "on",
+				"noImplicitCoercions": "on",
+				"noForEach": "on",
+				"noUselessStringConcat": "on",
+				"noVoid": "on",
+				"useWhile": "on"
+			},
+			"correctness": {
+				"noReactPropAssignments": "on",
+				"useHookAtTopLevel": "on",
+				"useJsxKeyInIterable": "on"
+			},
+			"nursery": {
+				"noImportCycles": "on",
+				"noUselessUndefined": "on",
+				"useExhaustiveSwitchCases": "on"
+			},
+			"performance": {
+				"noAwaitInLoops": "on",
+				"noDelete": "on"
+			},
+			"style": {
+				"noDefaultExport": "on",
+				"noExportedImports": "on",
+				"noInferrableTypes": "on",
+				"noNegationElse": "on",
+				"noNestedTernary": "on",
+				"noNonNullAssertion": "off",
+				"noParameterAssign": "on",
+				"noShoutyConstants": "on",
+				"noUnusedTemplateLiteral": "on",
+				"noUselessElse": "on",
+				"noYodaExpression": "on",
+				"useArrayLiterals": "on",
+				"useAsConstAssertion": "on",
+				"useComponentExportOnlyModules": "on",
+				"useConsistentArrayType": "on",
+				"useConsistentObjectDefinitions": "on",
+				"useConsistentMemberAccessibility": {
+					"level": "on",
+					"options": { "accessibility": "explicit" }
+				},
+				"useCollapsedElseIf": "on",
+				"useDefaultParameterLast": "on",
+				"useDefaultSwitchClause": "on",
+				"useFilenamingConvention": {
+					"level": "on",
+					"options": { "filenameCases": ["kebab-case"] }
+				},
+				"useLiteralEnumMembers": "on",
+				"useNumberNamespace": "on",
+				"useObjectSpread": "on",
+				"useReadonlyClassProperties": "on",
+				"useSelfClosingElements": "on",
+				"useShorthandAssign": "on",
+				"useShorthandFunctionType": "on",
+				"useSingleVarDeclarator": "on"
+			},
+			"suspicious": {
+				"noBitwiseOperators": "on",
+				"noConfusingVoidType": "off",
+				"noConstantBinaryExpressions": "on",
+				"noConstEnum": "off",
+				"noEmptyBlockStatements": "on",
+				"noEvolvingTypes": "on",
+				"noShadowRestrictedNames": "off",
+				"noUnassignedVariables": "on",
+				"noVar": "on"
+			}
+		}
+	},
+	"javascript": {
+		"jsxRuntime": "reactClassic"
+	}
+}
