@@ -1,4 +1,4 @@
-import React from "react";
+import React from "@rbxts/react";
 
 export function LobbyApp() {
 	// biome-ignore lint/complexity/noUselessFragments: This is a placeholder.
