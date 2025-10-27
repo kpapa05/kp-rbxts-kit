@@ -30,9 +30,6 @@
 				"transform": "rbxts-transformer-flamework",
 				"obfuscation": true
 			}
-		],
-		"paths": {
-			"react": ["node_modules/@rbxts/react"]
-		}
+		]
 	}
 }

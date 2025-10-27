@@ -1,6 +1,6 @@
+import React, { StrictMode } from "@rbxts/react";
 import { createPortal, createRoot } from "@rbxts/react-roblox";
 import { Players } from "@rbxts/services";
-import React, { StrictMode } from "react";
 import { env } from "shared/utils/env";
 import { GameApp } from "./game-app";
 import { LobbyApp } from "./lobby-app";
